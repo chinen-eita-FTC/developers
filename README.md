@@ -7,11 +7,11 @@
 
 ### データベースの初期設定
 1. `MySQL` の初期パスワード確認  
-```
-sudo cat /var/log/mysqld.log | grep password
-```  
+    ```
+    sudo cat /var/log/mysqld.log | grep password
+    ```  
 1. `MySQL` の接続確認  
-上記で確認したパスワードをもとにMySQLに接続を行う  
-```
-mysql -u root -p<パスワード>
-```  
+    上記で確認したパスワードをもとにMySQLに接続を行う  
+    ```
+    mysql -u root -p<パスワード>
+    ```  
