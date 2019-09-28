@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  # Json-Serverの設定 
+  json-server:
+    build: ./json-server
+    container_name: json-server
+    ports:
+      - '3000:3000'
+    volumes: 
+      - ./json-server/response.json:/data/response.json
+      - ./json-server/middleware.js:/data/middleware.js
+    command: json-server --watch response.json -m middleware.js --host 0.0.0.0

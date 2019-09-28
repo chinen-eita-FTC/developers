@@ -4,5 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "provision/provision.sh"
   config.vm.provision :shell, path: "provision/Utilities/install.sh"
   config.vm.provision :shell, path: "provision/Git/install.sh"
+  config.vm.provision :shell, path: "provision/Node/install.sh"
+  config.vm.provision :shell, path: "provision/Docker/install.sh"
   config.vm.provision "shell", path: "setup/setup.sh", run: "always"
 end
