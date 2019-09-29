@@ -1,0 +1,6 @@
+{
+    "folders": [{
+        "uri": "sftp://vagrant:vagrant@192.168.33.10:22/app",
+        "name": "app"
+    }]
+}
